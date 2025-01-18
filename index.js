@@ -11,9 +11,11 @@ app.use(cors())
 const userRouter = require("./Routes/userRoutes")
 const expoRouter = require("./Routes/expoRoutes")
 const feedbackRouter = require("./Routes/feedbackRoutes")
+const chatRouter = require("./Routes/chatRoutes")
 app.use('/api/user',userRouter)
 app.use('/api/expo',expoRouter)
 app.use('/api/feedback',feedbackRouter)
+app.use('/api/chat',chatRouter)
 
 
 
